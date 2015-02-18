@@ -1,0 +1,15 @@
+{
+	"type": "docker",
+	"image": "barchart/crypter:latest",
+  "name": "crypter",
+	"volumes": [
+		{
+			"containerPath": "/etc/crypter/keys",
+			"hostPath": "/etc/crypter"
+		},
+		{
+			"containerPath": "/var/run/crypter",
+			"hostPath": "/var/run/crypter"
+		}
+	]
+}
